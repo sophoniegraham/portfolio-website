@@ -18,7 +18,7 @@ function App() {
             <p>A simple and clean task management app built with React.</p>
             <div className="buttons">
               <a href="https://sophie-todo-app.netlify.app/" target="_blank" rel="noopener noreferrer" className="btn live">🌐 Live Site</a>
-              <a href="https://github.com/yourgithubusername/todo-app" target="_blank" rel="noopener noreferrer" className="btn code">💻 GitHub Code</a>
+              <a href="https://github.com/sophoniegraham/todo-app" target="_blank" rel="noopener noreferrer" className="btn code">💻 GitHub Code</a>
             </div>
           </div>
 
@@ -27,8 +27,8 @@ function App() {
             <h3>🎨 Portfolio Website</h3>
             <p>A professional portfolio showcasing my projects and skills. Built with React!</p>
             <div className="buttons">
-              <a href="https://app.netlify.com/teams/sophoniegraham/sites" target="_blank" rel="noopener noreferrer" className="btn live">🌐 Live Site</a>
-              <a href="https://github.com/sophoniegraham?tab=repositories" target="_blank" rel="noopener noreferrer" className="btn code">💻 GitHub Code</a>
+              <a href="https://sophie-portfolio-website.netlify.app/" target="_blank" rel="noopener noreferrer" className="btn live">🌐 Live Site</a>
+              <a href="https://github.com/sophoniegraham/portfolio-website" target="_blank" rel="noopener noreferrer" className="btn code">💻 GitHub Code</a>
             </div>
           </div>
         </div>
