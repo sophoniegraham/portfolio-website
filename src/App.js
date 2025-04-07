@@ -22,6 +22,16 @@ function App() {
             </div>
           </div>
 
+          {/* Restaurant Orders */}
+  <div className="project-card">
+    <h3>🍝 Restaurant Orders</h3>
+    <p>A clean, responsive restaurant ordering app featuring a modern UI, animations, and live deployment.</p>
+    <div className="buttons">
+      <a href="https://sophie-restaurantorder.netlify.app" target="_blank" rel="noopener noreferrer" className="btn live">🌐 Live Site</a>
+      <a href="https://github.com/sophoniegraham/restaurant-orders" target="_blank" rel="noopener noreferrer" className="btn code">💻 GitHub Code</a>
+    </div>
+  </div>
+
           {/* Portfolio Website */}
           <div className="project-card">
             <h3>🎨 Portfolio Website</h3>
