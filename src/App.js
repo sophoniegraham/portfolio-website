@@ -23,81 +23,68 @@ function App() {
 
   const projects = [
     {
-      title: 'MBIA Maryland - AI Career Mapping',
-      emoji: '🤖',
-      description: 'Innovative AI-powered career mapping platform developed through the Maryland Business Innovation Association (MBIA). Features intelligent data visualization, personalized career path recommendations, and real-time analytics integration.',
-      tech: ['AI Integration', 'Data Visualization', 'React', 'API Integration', 'UX Design'],
+      title: 'FinancePulse Dashboard',
+      description: 'Enterprise-grade financial analytics platform featuring real-time transaction tracking, monthly spending trends visualization, and comprehensive asset management. Built with React and Chart.js, implementing localStorage persistence and strict data validation.',
+      tech: ['React', 'Chart.js', 'LocalStorage', 'Data Validation', 'Financial Analytics'],
       liveUrl: '#',
       githubUrl: '#',
-      featured: true,
-      badge: 'MBIA Project'
+      category: 'Data Visualization'
     },
     {
-      title: 'Creatorverse',
-      emoji: '🎨',
-      description: 'Full-stack content management platform built with React and Supabase, featuring complete CRUD functionality for managing creator profiles and content.',
-      tech: ['React', 'Supabase', 'CSS3', 'REST API'],
-      liveUrl: 'https://creatorverse-sophie.netlify.app',
-      githubUrl: 'https://github.com/sophoniegraham/Creatorverse',
-      featured: true
-    },
-    {
-      title: 'Restaurant Orders',
-      emoji: '🍽️',
-      description: 'A clean, responsive restaurant ordering app featuring modern UI, smooth animations, and professional design showcasing CSS layout expertise.',
-      tech: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design'],
+      title: 'Restaurant Orders Platform',
+      description: 'Full-featured e-commerce ordering system with shopping cart functionality, real-time tax calculations, and persistent cart state. Demonstrates advanced state management and transaction processing logic.',
+      tech: ['JavaScript', 'CSS3', 'LocalStorage', 'E-commerce Logic'],
       liveUrl: 'https://sophie-restaurantorder.netlify.app',
       githubUrl: 'https://github.com/sophoniegraham/restaurant-orders',
-      featured: true
+      category: 'E-commerce'
     },
     {
-      title: 'Todo App',
-      emoji: '📝',
-      description: 'Professional task management app with localStorage persistence, dark mode UI, and toast notifications. Features task completion tracking and glassmorphism design.',
-      tech: ['React', 'JavaScript', 'CSS3', 'LocalStorage'],
+      title: 'Task Management System',
+      description: 'Professional productivity application with category-based organization, advanced filtering capabilities, and data persistence. Features include real-time statistics, search functionality, and responsive design.',
+      tech: ['React', 'LocalStorage', 'State Management', 'UI/UX Design'],
       liveUrl: 'https://sophie-todo-app.netlify.app',
       githubUrl: 'https://github.com/sophoniegraham/todo-app',
-      featured: true
+      category: 'Productivity'
     }
   ];
 
   const experiences = [
     {
+      role: 'Technical Consultant',
+      company: 'Johns Hopkins Technology Ventures',
+      period: '2024 - Present',
+      description: 'Providing strategic technology consulting for emerging ventures in the Johns Hopkins ecosystem. Leading UI/UX initiatives for healthcare technology platforms, conducting technical feasibility assessments, and advising on product development strategies for early-stage companies.',
+      skills: ['Tech Consulting', 'UI/UX Strategy', 'Healthcare Technology', 'Product Advisory', 'Emerging Technologies']
+    },
+    {
       role: 'Lead Design Consultant',
       company: 'Johns Hopkins Medicine - Technology Innovation Center',
-      period: 'Present',
-      description: 'Leading UI/UX design initiatives for healthcare technology solutions, spearheading user research, and collaborating with cross-functional teams to deliver user-centered designs that improve patient care and clinical workflows.',
-      skills: ['UI/UX Leadership', 'Healthcare Tech', 'User Research', 'Design Systems', 'Stakeholder Management']
+      period: '2023 - Present',
+      description: 'Leading cross-functional design initiatives for clinical technology solutions at one of the nation\'s premier healthcare institutions. Collaborating with medical professionals, engineers, and product teams to deliver user-centered designs that enhance patient care and clinical workflows. Spearheading UI/UX research and design system development.',
+      skills: ['Cross-functional Leadership', 'Clinical Tech Design', 'User Research', 'Design Systems', 'Stakeholder Management']
     },
     {
       role: 'UX Lead',
       company: 'LactiSure MVP',
-      period: '2024 - 2025',
-      description: 'Led the complete UX strategy for LactiSure MVP, a maternal health technology platform. Designed intuitive user flows, conducted usability testing, and created high-fidelity prototypes that increased user engagement by delivering a seamless breastfeeding support experience.',
-      skills: ['UX Strategy', 'Prototyping', 'Usability Testing', 'Mobile Design', 'Health Tech']
+      period: '2024',
+      description: 'Directed comprehensive UX strategy for maternal health technology platform. Led user research initiatives, designed intuitive mobile interfaces, and conducted iterative usability testing. Established design frameworks that increased user engagement and improved accessibility for underserved populations.',
+      skills: ['UX Strategy', 'Mobile Design', 'Usability Testing', 'Health Technology', 'Accessibility']
     },
     {
-      role: 'AI Career Mapping Developer',
+      role: 'AI Integration Developer',
       company: 'Maryland Business Innovation Association (MBIA)',
       period: '2024',
-      description: 'Developed an innovative AI-powered career mapping platform through MBIA. Integrated machine learning algorithms for personalized career recommendations, implemented advanced data visualization dashboards, and created an intuitive interface for career path exploration.',
-      skills: ['AI Integration', 'Data Visualization', 'React Development', 'API Integration', 'Product Design']
-    },
-    {
-      role: 'Fellow',
-      company: 'G{Code}',
-      period: '2024',
-      description: 'Intensive software engineering fellowship focusing on full-stack web development, modern JavaScript frameworks, and professional development practices.',
-      skills: ['React', 'JavaScript', 'Web Development', 'Version Control']
+      description: 'Developed innovative AI-powered career mapping platform through MBIA partnership. Integrated machine learning algorithms for personalized career recommendations, implemented advanced data visualization dashboards, and architected scalable frontend systems. Collaborated with data scientists and product strategists to deliver intelligent career guidance solutions.',
+      skills: ['AI Integration', 'Data Visualization', 'React Development', 'API Integration', 'Machine Learning Applications']
     }
   ];
 
   return (
     <div className="App">
-      {/* Glassmorphism Navbar */}
+      {/* Minimalist Navbar */}
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-content">
-          <h1 className="nav-logo">SG.</h1>
+          <h1 className="nav-logo">SOPHONIE GRAHAM</h1>
           <div className="nav-links">
             <button onClick={() => scrollToSection('home')} className={activeSection === 'home' ? 'active' : ''}>Home</button>
             <button onClick={() => scrollToSection('experience')} className={activeSection === 'experience' ? 'active' : ''}>Experience</button>
@@ -110,49 +97,51 @@ function App() {
       {/* Hero Section */}
       <section id="home" className="hero-section">
         <div className="hero-content">
-          <div className="hero-badge">👋🏾 Welcome to my portfolio</div>
-          <h1 className="hero-title">
-            Hi, I'm <span className="gradient-text">Sophonie Graham</span>
-          </h1>
-          <p className="hero-subtitle">Front End Web Developer | UX Leader | AI Integration Specialist</p>
+          <div className="hero-label">Front End Developer</div>
+          <h1 className="hero-title">Sophonie Graham</h1>
+          <p className="hero-subtitle">Building intelligent interfaces for emerging technologies</p>
           <p className="hero-description">
-            I blend technical expertise with creative problem-solving to build responsive,
-            user-centered web applications. With experience leading UX initiatives in healthcare tech
-            and developing AI-powered solutions, I bring both technical precision and strategic thinking to every project.
+            Specialized in UI/UX design and development for healthcare technology and enterprise applications.
+            Experienced in leading cross-functional teams, integrating AI-powered solutions, and delivering
+            user-centered designs that drive measurable impact.
           </p>
           <div className="hero-buttons">
             <button onClick={() => scrollToSection('projects')} className="btn-primary">
-              View My Work
+              View Projects
             </button>
             <button onClick={() => scrollToSection('contact')} className="btn-secondary">
-              Get In Touch
+              Get in Touch
             </button>
           </div>
           <div className="hero-tech">
             <span>React</span>
             <span>JavaScript</span>
+            <span>UI/UX Design</span>
             <span>AI Integration</span>
-            <span>UX Design</span>
             <span>Data Visualization</span>
           </div>
         </div>
       </section>
 
-      {/* Experience Timeline Section */}
+      {/* Experience Section */}
       <section id="experience" className="experience-section">
         <div className="container">
-          <h2 className="section-title">
-            <span className="section-emoji">💼</span>
-            Professional Experience
-          </h2>
+          <div className="section-header">
+            <h2 className="section-title">Professional Experience</h2>
+            <div className="section-line"></div>
+          </div>
           <div className="timeline">
             {experiences.map((exp, index) => (
               <div key={index} className="timeline-item">
-                <div className="timeline-dot"></div>
+                <div className="timeline-marker"></div>
                 <div className="timeline-content">
-                  <div className="timeline-period">{exp.period}</div>
-                  <h3 className="timeline-role">{exp.role}</h3>
-                  <h4 className="timeline-company">{exp.company}</h4>
+                  <div className="timeline-header">
+                    <div>
+                      <div className="timeline-period">{exp.period}</div>
+                      <h3 className="timeline-role">{exp.role}</h3>
+                      <h4 className="timeline-company">{exp.company}</h4>
+                    </div>
+                  </div>
                   <p className="timeline-description">{exp.description}</p>
                   <div className="timeline-skills">
                     {exp.skills.map((skill, idx) => (
@@ -166,20 +155,17 @@ function App() {
         </div>
       </section>
 
-      {/* Projects Gallery Section */}
+      {/* Projects Section */}
       <section id="projects" className="projects-section">
         <div className="container">
-          <h2 className="section-title">
-            <span className="section-emoji">🚀</span>
-            Featured Projects
-          </h2>
+          <div className="section-header">
+            <h2 className="section-title">Featured Projects</h2>
+            <div className="section-line"></div>
+          </div>
           <div className="projects-grid">
             {projects.map((project, index) => (
               <div key={index} className="project-card">
-                <div className="project-header">
-                  <span className="project-emoji">{project.emoji}</span>
-                  {project.featured && <span className="featured-badge">{project.badge || 'Featured'}</span>}
-                </div>
+                <div className="project-category">{project.category}</div>
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-description">{project.description}</p>
                 <div className="project-tech">
@@ -188,11 +174,11 @@ function App() {
                   ))}
                 </div>
                 <div className="project-buttons">
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="btn-live">
-                    🌐 Live Demo
+                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="btn-project">
+                    Live Demo
                   </a>
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn-github">
-                    💻 GitHub
+                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn-project-outline">
+                    View Code
                   </a>
                 </div>
               </div>
@@ -204,23 +190,26 @@ function App() {
       {/* Contact Section */}
       <section id="contact" className="contact-section">
         <div className="container">
-          <h2 className="section-title">
-            <span className="section-emoji">💌</span>
-            Let's Connect
-          </h2>
+          <div className="section-header">
+            <h2 className="section-title">Let's Connect</h2>
+            <div className="section-line"></div>
+          </div>
           <p className="contact-description">
-            I'm currently open to new opportunities! Whether you have a project in mind,
-            want to collaborate, or just want to say hi, I'd love to hear from you.
+            Open to opportunities in front end development, UI/UX design, and technical consulting.
+            Let's discuss how I can contribute to your team.
           </p>
-          <div className="contact-buttons">
-            <a href="mailto:sophonieg14@gmail.com" className="contact-btn">
-              📧 Email Me
+          <div className="contact-grid">
+            <a href="mailto:sophonieg14@gmail.com" className="contact-card">
+              <h3>Email</h3>
+              <p>sophonieg14@gmail.com</p>
             </a>
-            <a href="https://www.linkedin.com/in/sophonie-graham-b28705119/" target="_blank" rel="noopener noreferrer" className="contact-btn">
-              💼 LinkedIn
+            <a href="https://www.linkedin.com/in/sophonie-graham-b28705119/" target="_blank" rel="noopener noreferrer" className="contact-card">
+              <h3>LinkedIn</h3>
+              <p>Sophonie Graham</p>
             </a>
-            <a href="https://github.com/sophoniegraham" target="_blank" rel="noopener noreferrer" className="contact-btn">
-              💻 GitHub
+            <a href="https://github.com/sophoniegraham" target="_blank" rel="noopener noreferrer" className="contact-card">
+              <h3>GitHub</h3>
+              <p>@sophoniegraham</p>
             </a>
           </div>
         </div>
@@ -229,8 +218,8 @@ function App() {
       {/* Footer */}
       <footer className="footer">
         <div className="footer-content">
-          <p>© 2026 Sophonie Graham. Built with React & ❤️</p>
-          <p className="footer-location">📍 Based in Jamaica</p>
+          <p>&copy; 2026 Sophonie Graham. All rights reserved.</p>
+          <p className="footer-location">Kingston, Jamaica</p>
         </div>
       </footer>
     </div>
