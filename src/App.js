@@ -25,9 +25,9 @@ function App() {
     {
       title: 'FinancePulse Dashboard',
       description: 'Enterprise-grade financial analytics platform featuring real-time transaction tracking, monthly spending trends visualization with interactive charts, and comprehensive asset management. Implements localStorage persistence for seamless data continuity and strict validation protocols for transaction integrity.',
-      tech: ['React', 'Chart.js', 'LocalStorage', 'Data Validation', 'Financial Analytics'],
-      liveUrl: '#',
-      githubUrl: '#',
+      tech: ['React', 'Canvas API', 'LocalStorage', 'Data Validation', 'Financial Analytics'],
+      liveUrl: 'https://creatorverse-sophonie.netlify.app',
+      githubUrl: 'https://github.com/sophoniegraham/Creatorverse',
       category: 'Data Visualization',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop&q=80'
     },
